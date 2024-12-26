@@ -1,0 +1,8 @@
+name: vpm
+services:
+    vpm:
+        restart: always
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        command: bun .
